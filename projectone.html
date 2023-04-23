@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project One</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../res/fontawesome/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="namuun.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-black sticky-top site-header">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="namuun.html">Hello!</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+
+    <h2 style="padding: 40px;">Миний хичээллэдэг спортууд</h2>
+        <div style="padding: 50px;" class="container">
+          <div class="row">
+          <div class="about-col-1">
+            <img src="zurag8.jpeg" alt="">
+          </div>
+          <div class="about-col-2">
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Спортууд</p>
+              <p class="tab-links" onclick="opentab('experience')">Туршлага</p>
+              <p class="tab-links" onclick="opentab('education')">Чадвар</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Волейбол</span></li>
+                    <li><span>Хөнгөн атлетик</span></li>
+                    <li><span>Сагс</span></li>
+                    <li><span>Бадминтон</span></li>
+                    <li><span>Усан сэлэлт</span></li>
+                    <li><span>Хиймэл ханан хаданд авиралт</span></li>
+                    <li><span>Шатар</span></li>
+                  </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Миний бие 3-р ангиасаа спортоор идэвхтэй хичээллэж эхэлсэн.</span></li>
+                </ul>
+           </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>Спортоос олж авсан зүйл нь зөвхөн амжилт байгаагүй ба тэсвэр хатуужил, ур чадвар, туршлага, авхаалж самбаа, хүндлэл зэрэг зүйлсийг өөртөө бий болгосон. Хэдий амжилттай тамирчин болж чадаагүй ч спортод зориулсан цаг хугацаандаа огт харамсдаггүй. Спортоор бүтээгдсэн би ирээдүйд ямар ч сорилтой нүүр тулсан даваад гарах итгэл найдвар, тэсвэр хатуужилтай нэгэн болсон билээ.</span><br></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <script src="custom.js"></script>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+</body>
+</html>
