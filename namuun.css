@@ -224,6 +224,9 @@ footer .copyright a:hover{
     .tab-links{
         font-size: 10px;
     }
+    .ppp{
+        text-align: center;
+    }
 }
 
 .container{
@@ -475,7 +478,7 @@ footer .copyright a:hover{
 }
 .tab-links{
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
